@@ -1,0 +1,36 @@
+{
+    "version": 2,
+    "framework": null,
+    "buildCommand": "",
+    "functions": {
+        "api/index.php": {
+            "runtime": "vercel-php@0.9.0"
+        }
+    },
+    "routes": [
+        {
+            "src": "/images/(.*)",
+            "dest": "/public/images/$1"
+        },
+        {
+            "src": "/build/(.*)",
+            "dest": "/public/build/$1"
+        },
+        {
+            "src": "/favicon\\.ico",
+            "dest": "/public/favicon.ico"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.php"
+        }
+    ],
+    "env": {
+        "APP_ENV": "production",
+        "APP_DEBUG": "false",
+        "APP_URL": "https://sale-page-demo1-4hg4.vercel.app",
+        "CACHE_DRIVER": "array",
+        "SESSION_DRIVER": "array",
+        "LOG_CHANNEL": "stderr"
+    }
+}
