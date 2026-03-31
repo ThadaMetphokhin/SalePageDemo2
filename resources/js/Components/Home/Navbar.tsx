@@ -51,7 +51,6 @@ const Navbar: React.FC<NavbarProps> = () => {
                     'border-b border-[#D4AF37]/40 bg-gradient-to-r from-[#1E3A5F] to-[#2C4A6E] shadow-2xl'
                     //:// 'bg-gradient-to-r from-[#1E3A5F] to-[#2C4A6E] shadow-lg'
                 }`}
-                role="navbar"
             >
                 <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
                     <div className="flex h-16 items-center justify-between md:h-20">
@@ -158,6 +157,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                             {/* Mobile Menu Button */}
                             <button
                                 type="button"
+                                aria-label="Open main menu"
                                 onClick={() =>
                                     setIsMobileMenuOpen(!isMobileMenuOpen)
                                 }

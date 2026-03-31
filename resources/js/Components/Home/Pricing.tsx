@@ -43,7 +43,6 @@ const Pricing: React.FC = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="text-3xl md:text-4xl font-bold text-center mb-10"
-        role="price"
       >
         เลือกแผนที่ใช่สำหรับคุณ
       </motion.h2>

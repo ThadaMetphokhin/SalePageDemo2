@@ -14,7 +14,6 @@ const Hero: React.FC = () => {
     return (
         <section
             className="relative overflow-hidden pt-20 md:pt-24"
-            role="herosection"
         >
             <div className="mx-auto max-w-7xl px-5 py-8 sm:px-6 md:py-16 lg:px-8 lg:py-20">
                 <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
@@ -78,12 +77,10 @@ const Hero: React.FC = () => {
                             <div className="relative">
                                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#D4AF37]/10 to-transparent blur-3xl"></div>
                                 <img
-                                    width={1200}
-                                    height={768}
+                                    width={800}
+                                    height={512}
                                     src="/images/product.webp"
-                                    srcSet="
-                                  /images/product.webp 1200w
-                                "
+                                    fetchPriority="high"
                                     alt="ZenithCore+ Premium Nootropic"
                                     className="relative w-full max-w-sm rounded-2xl border-4 border-[#D4AF37]/60 shadow-2xl md:max-w-md lg:max-w-lg"
                                 />

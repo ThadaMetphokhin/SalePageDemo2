@@ -89,7 +89,7 @@ const Footer: React.FC = () => {
     // ];
 
     return (
-        <footer className="bg-gradient-to-b from-[#0A1F3E] to-[#05152C] text-white" role="footer">
+        <footer className="bg-gradient-to-b from-[#0A1F3E] to-[#05152C] text-white" >
             {/* Main Footer */}
             <div className="mx-auto max-w-7xl px-5 py-12 sm:px-6 md:py-16 lg:px-8">
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5 lg:gap-12">

@@ -28,7 +28,6 @@ const Reviews: React.FC = () => {
         <section
             id="reviews"
             className="bg-[#F9F5EA] py-16 md:py-20"
-            role="reviews"
         >
             <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
                 <motion.h2

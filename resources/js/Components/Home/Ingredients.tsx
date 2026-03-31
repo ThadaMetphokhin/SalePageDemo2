@@ -30,7 +30,7 @@ const iconMap = {
 
 const Ingredients: React.FC = () => {
   return (
-    <section id="science" className="py-16 md:py-20 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8" role="ingredient">
+    <section id="science" className="py-16 md:py-20 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8" >
       <motion.h2
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}

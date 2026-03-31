@@ -5,7 +5,7 @@ import { FlaskConical } from 'lucide-react';
 
 const About: React.FC = () => {
     return (
-        <section id="about" className="bg-white py-16 md:py-20" role="about">
+        <section id="about" className="bg-white py-16 md:py-20" >
             <div className="mx-auto max-w-4xl px-5 text-center sm:px-6 lg:px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}

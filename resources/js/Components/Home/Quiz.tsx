@@ -227,9 +227,7 @@ const Quiz: React.FC<QuizComponentProps> = ({
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -50 }}
                 transition={{ duration: 0.3 }}
-
                 className="space-y-8"
-                role="quiz"
             >
                 {/* Question Header */}
                 <div className="text-center">
@@ -246,25 +244,25 @@ const Quiz: React.FC<QuizComponentProps> = ({
                 <div className="rounded-2xl bg-gradient-to-br from-gray-50 to-white p-6 md:p-8">
                     {question.type === 'slider' && (
                         <div className="space-y-6">
-                            <label>
-                                <div className="flex items-end justify-between">
-                                    <span className="text-gray-600">
-                                        {question.min} ชม.
+                            <div className="flex items-end justify-between">
+                                <span className="text-gray-600">
+                                    {question.min} ชม.
+                                </span>
+                                <div className="text-center">
+                                    <span className="text-4xl font-bold text-[#D4AF37]">
+                                        {quizData.workHours}
                                     </span>
-                                    <div className="text-center">
-                                        <span className="text-4xl font-bold text-[#D4AF37]">
-                                            {quizData.workHours}
-                                        </span>
-                                        <span className="ml-1 text-gray-500">
-                                            {question.unit}
-                                        </span>
-                                    </div>
-                                    <span className="text-gray-600">
-                                        {question.max}+ ชม.
+                                    <span className="ml-1 text-gray-500">
+                                        {question.unit}
                                     </span>
                                 </div>
-                            </label>
+                                <span className="text-gray-600">
+                                    {question.max}+ ชม.
+                                </span>
+                            </div>
+                            <label htmlFor="range-input">เลือกระดับ:</label>
                             <input
+                                aria-label="เลือกจำนวน"
                                 type="range"
                                 min={question.min}
                                 max={question.max}

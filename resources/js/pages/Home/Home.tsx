@@ -35,17 +35,19 @@ function App() {
             >
                 <div className="min-h-screen">
                     <Navbar cartCount={2} />
-                    <Hero />
-                    <PainPoint />
-                    <Quiz />
-                    <Ingredients />
-                    <Reviews />
-                    <section className="bg-[#F9F5EA] py-16 md:py-20">
-                        <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
-                            <Pricing />
-                        </div>
-                    </section>
-                    <About />
+                    <main>
+                        <Hero />
+                        <PainPoint />
+                        <Quiz />
+                        <Ingredients />
+                        <Reviews />
+                        <section className="bg-[#F9F5EA] py-16 md:py-20">
+                            <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+                                <Pricing />
+                            </div>
+                        </section>
+                        <About />
+                    </main>
                     <Footer />
                     <CartDrawer />
                 </div>
