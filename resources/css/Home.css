@@ -1,0 +1,73 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #fefaf0 0%, #fffbf5 100%);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .gold-gradient-bg {
+    background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
+  }
+  
+  .gold-text-gradient {
+    background: linear-gradient(135deg, #D4AF37 0%, #C49A1B 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .navbar-blur {
+    backdrop-filter: blur(16px);
+    background: rgba(255, 252, 240, 0.92);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+  }
+  
+  .btn-gold-premium {
+    background: linear-gradient(105deg, #D4AF37 0%, #BD9A2A 100%);
+    border: none;
+    color: #0A1F3E;
+    font-weight: 700;
+    box-shadow: 0 6px 14px rgba(212, 175, 55, 0.3);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .btn-gold-premium:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(212, 175, 55, 0.4);
+    background: linear-gradient(105deg, #E2B94A 0%, #D4AF37 100%);
+  }
+  
+  .btn-outline-gold {
+    border: 2px solid #D4AF37;
+    background: transparent;
+    color: #0A1F3E;
+    transition: all 0.2s ease;
+  }
+  
+  .btn-outline-gold:hover {
+    background: #D4AF37;
+    color: #0A1F3E;
+  }
+  
+  .premium-card {
+    transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+  }
+  
+  .premium-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 35px -12px rgba(0, 0, 0, 0.15);
+  }
+}
