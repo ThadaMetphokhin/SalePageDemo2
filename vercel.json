@@ -28,7 +28,7 @@
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "false",
-        "APP_URL": "https://sale-page-demo2.vercel.app/",
+        "APP_URL": "https://salepagedemo2cthdev.vercel.app/",
         "CACHE_DRIVER": "array",
         "SESSION_DRIVER": "array",
         "LOG_CHANNEL": "stderr"
